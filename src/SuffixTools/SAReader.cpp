@@ -76,7 +76,7 @@ void SAReader::readElems(std::vector<uint64_t>& outVector)
     assert(m_stage == SAIOS_ELEM);
     size_t cap = outVector.capacity();
     size_t num_read = 0;
-    size_t MAX_ELEMS = std::numeric_limits<uint32_t>::max();
+    size_t MAX_ELEMS = std::numeric_limits<uint64_t>::max();
 
     SAElem e;
     while(*m_pReader >> e)
