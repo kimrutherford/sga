@@ -71,7 +71,7 @@ void SAReader::readElems(SAElemVector& elemVector)
 }
 
 //
-void SAReader::readElems(std::vector<uint32_t>& outVector)
+void SAReader::readElems(std::vector<uint64_t>& outVector)
 {
     assert(m_stage == SAIOS_ELEM);
     size_t cap = outVector.capacity();

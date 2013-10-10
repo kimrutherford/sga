@@ -12,3 +12,6 @@ build*
 *.o
 *.a
 Makefile
+*.Po
+config.*
+stamp-h1

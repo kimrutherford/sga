@@ -16,7 +16,7 @@
 #include "BWT.h"
 #include "ReadInfoTable.h"
 
-typedef uint32_t SSA_INT_TYPE;
+typedef uint64_t SSA_INT_TYPE;
 
 enum SSAFileType
 {

@@ -43,7 +43,7 @@ class SAReader
         // Read the file into a vector of unsigned ints storing
         // the read indices. This is a more compact representation
         // than storing the full SAElems but only works up to 2**32 values
-        void readElems(std::vector<uint32_t>& outVector);
+        void readElems(std::vector<uint64_t>& outVector);
 
         // Read a single element
         SAElem readElem();
