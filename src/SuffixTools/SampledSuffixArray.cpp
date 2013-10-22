@@ -94,7 +94,7 @@ void SampledSuffixArray::build(const BWT* pBWT, const ReadInfoTable* pRIT, int s
     size_t numStrings = pRIT->getCount();
     m_saLexoIndex.resize(numStrings);
 
-    size_t MAX_ELEMS = std::numeric_limits<SSA_INT_TYPE>::max();
+    uint64_t MAX_ELEMS = std::numeric_limits<SSA_INT_TYPE>::max();
     if(numStrings > MAX_ELEMS)
     {
         std::cerr << "Error: Only " << MAX_ELEMS << " reads are allowed in the sampled suffix array\n";
